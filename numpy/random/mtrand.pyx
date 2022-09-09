@@ -655,6 +655,7 @@ cdef class RandomState:
 
     def randint(self, low, high=None, size=None, dtype=int):
         """
+        randint(high, size=None, dtype=int)
         randint(low, high=None, size=None, dtype=int)
 
         Return random integers from `low` (inclusive) to `high` (exclusive).
@@ -1023,6 +1024,7 @@ cdef class RandomState:
 
     def uniform(self, low=0.0, high=1.0, size=None):
         """
+        uniform(high, size=None)
         uniform(low=0.0, high=1.0, size=None)
 
         Draw samples from a uniform distribution.
@@ -1259,6 +1261,7 @@ cdef class RandomState:
 
     def random_integers(self, low, high=None, size=None):
         """
+        random_integers(high, size=None)
         random_integers(low, high=None, size=None)
 
         Random integers of type `np.int_` between `low` and `high`, inclusive.
